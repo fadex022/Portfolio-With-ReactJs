@@ -16,11 +16,15 @@ export default function HeadBar({menuOpen, setMenuOpen}) {
                 <span>+225 077892704</span>
               </div>
               <div className="items">
-                <MailIcon className="icon"/>
-                <span>bidigafadel@gmail.com</span>
+                <a href="mailto:bidigafadel@gmail.com">
+                  <MailIcon className="icon"/>
+                  <span>bidigafadel@gmail.com</span>
+                </a>
               </div>
               <div className="items">
-                <InstagramIcon className="icon"/>
+                <a href="http://www.instagram.com/young_ivorian">
+                  <InstagramIcon className="icon"/>
+                </a>
               </div>
               <div className="items">
             <TwitterIcon className="icon"/>

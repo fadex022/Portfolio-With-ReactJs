@@ -7,13 +7,15 @@ import Projects from "./components/projects/Projects"
 import Testimonials from "./components/testimonials/Testimonials"
 import Contact from "./components/contact/Contact"
 import Menu from "./components/menu/Menu"
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { ThemeContext } from './context';
 
 function App() {
+  const theme = useContext(ThemeContext)
   const [menuOpen, setMenuOpen] = useState(false)
-  const [dark, setDark] = useState(false)
+  const darkMode = theme.state.darkMode;
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor: darkMode ? "#222" : "white", color: darkMode ? "white" : "black"}}>
       <HeadBar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="container">
