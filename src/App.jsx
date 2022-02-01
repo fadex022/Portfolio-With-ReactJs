@@ -6,12 +6,16 @@ import Portfolio from "./components/portfolio/Portfolio"
 import Projects from "./components/projects/Projects"
 import Testimonials from "./components/testimonials/Testimonials"
 import Contact from "./components/contact/Contact"
+import Menu from "./components/menu/Menu"
+import { useState } from 'react';
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false)
+  const [dark, setDark] = useState(false)
   return (
     <div className="App">
-      ggg
-      <HeadBar/>
+      <HeadBar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="container">
         <Home/>
         <Portfolio/>

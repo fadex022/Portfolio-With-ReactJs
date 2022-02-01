@@ -1,0 +1,25 @@
+@import '../../global.scss';
+
+.Toggle{
+    width: 50px;
+    height: 25px;
+    border-radius: 20px;
+    border: 1px solid #999;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .t-icon{
+        width: 16px;
+        height: 16px;
+    }
+
+    .t-button {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: #999;
+        position: absolute;
+        cursor: pointer;
+    }
+}
