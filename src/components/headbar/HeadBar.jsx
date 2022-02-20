@@ -3,6 +3,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import MailIcon from '@material-ui/icons/Mail';
 import PhoneIcon from '@material-ui/icons/Phone';
+import GithubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import Toggle from '../toggle/Toggle'
 import { useContext } from "react";
@@ -35,6 +36,9 @@ export default function HeadBar({menuOpen, setMenuOpen}) {
               </div>
               <div className="items">
                 <LinkedInIcon className="icon"/>
+              </div>
+              <div className="items">
+                <GithubIcon className="icon"/>
               </div>
           </div>
           <div className="rigth">

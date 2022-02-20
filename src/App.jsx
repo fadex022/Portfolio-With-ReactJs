@@ -18,7 +18,7 @@ function App() {
     <div className="App" style={{backgroundColor: darkMode ? "#222" : "white", color: darkMode ? "white" : "black"}}>
       <HeadBar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-      <div className="container">
+      <div className="sections">
         <Home/>
         <Portfolio/>
         <Projects/>

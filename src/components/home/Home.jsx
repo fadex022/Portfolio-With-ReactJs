@@ -19,14 +19,14 @@ export default function Home() {
     <div className="Home" id="home">
       <div className="left">
         <div className="imageContainer">
-          <img src="assets/man.png" alt="A blob" srcset="" className="me"/>
-          <img src="assets/blob.png" alt="Fadel Bidiga" srcset="" className="blob"/>
+          <img src="assets/man.png" alt="Fadel Bidiga" srcset="" className="me"/>
+          <img src="assets/blob.png" alt="A blob" srcset="" className="blob"/>
         </div>
       </div>
       <div className="rigth">
         <div className="wrapper">
           <h2>Salut, je suis</h2>
-          <h1>Fadel Bidiga gauss</h1>
+          <h1>Fadel Bidiga</h1>
           <h3>Developpeur <span ref={textRef}></span></h3>
         </div>
         <a href="#portfolio">
