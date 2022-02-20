@@ -9,7 +9,7 @@ export default function Toggle() {
         theme.dispatch({type: "TOGGLE"})
     }
     return (
-        <div className="Toggle" onClick={handleClick}>
+        <div className="Toggle" onClick={handleClick} style={{backgroundColor: theme.state.darkMode ? "black" : "white"}}>
             <img src='/assets/sun.png' alt="" className="t-icon" />
             <img src='/assets/moon.png' alt="" className="t-icon" />
             <div className="t-button"  style={{left: theme.state.darkMode ? 0 : 25}}></div>

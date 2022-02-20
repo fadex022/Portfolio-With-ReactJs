@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: space-around;
     cursor: pointer;
+    transition: all 1s ease;
 
 
     .t-icon{
@@ -25,6 +26,6 @@
         border-radius: 50%;
         background-color: #999;
         position: absolute;
-    transition: all 1s ease;
+        transition: all 1s ease;
     }
 }

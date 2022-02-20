@@ -72,7 +72,7 @@
                     background-color: $secondcolor;
                     border-radius: 8px;
                     transform-origin: left;
-                    transition: all 2s ease;
+                    transition: all 1s ease;
                     
                 }
 
@@ -82,27 +82,24 @@
                     background-color: $secondcolor;
                     border-radius: 8px;
                     transform-origin: left;
-                    transition: all 2s ease;
+                    transition: all 1s ease;
                 }
             }
         }
     }
 
     &.active {
-        background-color: $secondcolor;
-        color: $maincolor;
+        
         .rigth{
             .option{
                 
                 span{
                     &:first-child{
-                        background-color: $maincolor;
                         height: 3px;
                         transform: rotate(45deg);
                         margin-bottom: 13px;
                     }
                     &:last-child{
-                        background-color: $maincolor;
                         height: 3px;
                         width: 100%;
                         transform: rotate(-45deg);
