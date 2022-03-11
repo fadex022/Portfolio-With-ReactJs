@@ -15,7 +15,7 @@ export default function HeadBar({menuOpen, setMenuOpen}) {
       <div className={"HeadBar " + ( menuOpen && "active")} style={{backgroundColor: theme.state.darkMode ? "black" : "white", color: theme.state.darkMode ? "white" : "black"}}>
         <div className="wrapper">
           <div className="left">
-              <a href="#home" className="logo">gauss.</a>
+              <a href="#home" className="logo" style={{color: theme.state.darkMode ? "white" : "black"}}>gauss.</a>
               <div className="items">
                 <PhoneIcon className="icon"/>
                 <span>+225 077892704</span>

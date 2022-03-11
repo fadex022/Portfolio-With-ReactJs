@@ -5,8 +5,6 @@
     height: 70px;
     position: fixed;
     top: 0;
-    background-color: $maincolor;
-    color:$secondcolor;
     z-index: 3;
     transition: all 1s ease;
 
@@ -15,15 +13,17 @@
         padding: 0 30px;
         align-items: center;
         justify-content: space-between;
+        color: inherit;
 
         .left{
             display: flex;
             align-items: center;
+            color: inherit;
             .logo{
+                transition: all 1s ease;
                 font-size: 40px;
                 font-weight: 700;
                 text-decoration: none;
-                color: inherit;
                 margin-right: 40px;
                 cursor: pointer;
             }

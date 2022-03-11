@@ -3,7 +3,7 @@ import './App.scss';
 import HeadBar from "./components/headbar/HeadBar"
 import Home from "./components/home/Home"
 import Portfolio from "./components/portfolio/Portfolio"
-import Projects from "./components/projects/Projects"
+import Skills from "./components/skills/Skills"
 import Testimonials from "./components/testimonials/Testimonials"
 import Contact from "./components/contact/Contact"
 import Menu from "./components/menu/Menu"
@@ -20,8 +20,8 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
         <Home/>
+        <Skills/>
         <Portfolio/>
-        <Projects/>
         <Testimonials/>
         <Contact/>
       </div>
