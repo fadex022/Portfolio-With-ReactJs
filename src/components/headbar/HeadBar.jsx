@@ -18,7 +18,7 @@ export default function HeadBar({menuOpen, setMenuOpen}) {
               <a href="#home" className="logo" style={{color: theme.state.darkMode ? "white" : "black"}}>gauss.</a>
               <div className="items">
                 <PhoneIcon className="icon"/>
-                <span>+225 077892704</span>
+                <span>+225 0778892704</span>
               </div>
               <div className="items">
                 <a href="mailto:bidigafadel@gmail.com">

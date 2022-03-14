@@ -10,7 +10,7 @@ export default function Home() {
     init(textRef.current, {
       showCursor: true,
       backDelay: 1500,
-      strings: ["Fullstack", "Python", "Javascript", "Flutter"]
+      strings: ["Développeur Fullstack", "Créateur d'Apps Androids Natives"]
     })
 
   }, []);
@@ -27,7 +27,7 @@ export default function Home() {
         <div className="wrapper">
           <h2>Salut, je suis</h2>
           <h1>Fadel Bidiga</h1>
-          <h3>Developpeur <span ref={textRef}></span></h3>
+          <h3> <span ref={textRef}></span></h3>
         </div>
         <a href="#portfolio">
           <MouseIcon className="mouse"/>
