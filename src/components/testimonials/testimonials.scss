@@ -10,6 +10,10 @@
     h1{
         top: 10px;
         overflow: hidden;
+
+        @include mobile{
+            font-size: 20px;
+        }
     }
 
     .container {

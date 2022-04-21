@@ -7,6 +7,14 @@
 //   @include mobile {
     // flex-direction: column;
 //   }
+  h1{
+    top: 10px;
+        overflow: hidden;
+
+        @include mobile{
+            font-size: 20px;
+        }
+  }
 
   .left {
     flex: 1;
@@ -26,11 +34,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    h2 {
-      font-size: 30px;
-    }
-
+    
     form {
       width: 70%;
       height: 70%;
