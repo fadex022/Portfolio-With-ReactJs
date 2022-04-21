@@ -1,3 +1,6 @@
+@import "../../global.scss";
+
+
 .Skills{
     // background-color: blueviolet;
     display: flex;
@@ -22,6 +25,13 @@
             position: relative;
             margin: 2%;
             animation: blink 2s ease-in-out alternate infinite;
+
+            @include tablet{
+                height: 80px;
+            }
+            @include mobile{
+                height: 60px;
+            }
 
             @keyframes blink {
                 from {transform: translateY(0px);}

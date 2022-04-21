@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .Testimonials {
     // background-color: darkcyan;
     display: flex;
@@ -17,6 +19,7 @@
         align-items: center;
         justify-content: center;
 
+
         .card{
             width: 250px;
             height: 70%;
@@ -29,6 +32,7 @@
             margin: 0 20px;
             transition: all 1s ease;
 
+            
             &:hover{
                 transform: scale(1.1);
             }

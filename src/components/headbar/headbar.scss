@@ -8,6 +8,10 @@
     z-index: 3;
     transition: all 1s ease;
 
+    @include mobile {
+        height: 40px;
+    }
+
     .wrapper{
         display: flex;
         padding: 0 30px;
@@ -26,12 +30,20 @@
                 text-decoration: none;
                 margin-right: 40px;
                 cursor: pointer;
+
+                @include mobile{
+                    font-size: 30px;
+                }
             }
 
             .items{
                 display: flex;
                 align-items: center;
                 margin-right: 30px;
+
+                @include tablet{
+                    display: none;
+                }
 
                 a{
                     display: flex;

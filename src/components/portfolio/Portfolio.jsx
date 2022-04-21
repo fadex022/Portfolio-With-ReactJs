@@ -65,8 +65,8 @@ export default function Portfolio() {
             </div>
           </div>))}
         </div>
-        <ArrowBackIos  className="arrow left" onClick={()=>handle("left")} style={{color: theme.state.darkMode ? "white" : "black"}}/>        
-        <ArrowForwardIos className="arrow right" onClick={()=>handle("right")} style={{color: theme.state.darkMode ? "white" : "black"}}/>        
+        <ArrowBackIos  className="arrow left" onClick={()=>handle("left")} /*style={{color: theme.state.darkMode ? "white" : "black"}}*//>        
+        <ArrowForwardIos className="arrow right" onClick={()=>handle("right")} />        
       </div>
   )
 }

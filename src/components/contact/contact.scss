@@ -1,3 +1,4 @@
+@import "../../global.scss";
 
 .contact {
   background-color: inherit;
@@ -10,6 +11,10 @@
   .left {
     flex: 1;
     overflow: hidden;
+
+    @include tablet {
+      display: none;
+    }
 
     img {
       height: 100%;
@@ -34,15 +39,25 @@
       align-items: center;
       justify-content: space-around;
 
+      @include mobile{
+        width: 90%;
+        height: 90%;
+      }
+
       input {
         width: 300px;
         height: 30px;
         font-size: 14px;
 
-        // @include mobile {
-        //   width: 200px;
-        //   height: 20px;
-        // }
+        @include mobile {
+          width: 200px;
+          height: 20px;
+        }
+
+        @include tablet_large {
+          width: 250px;
+          height: 25px;
+        }
       }
 
       textarea {
@@ -50,10 +65,15 @@
         height: 200px;
         font-size: 14px;
 
-        // @include mobile {
-        //   width: 200px;
-        //   height: 100px;
-        // }
+        @include mobile {
+          width: 200px;
+          height: 100px;
+        }
+
+        @include tablet_large {
+          width: 270px;
+          height: 150px;
+        }
       }
 
       button {
