@@ -2,3 +2,25 @@ $maincolor: white;
 $secondcolor: black;
 $optionWidth: 35px;
 $optionHeigth: 35px;
+
+$width_tablet_large: 959px;
+$width_tablet: 768px;
+$width_mobile: 500px;
+
+@mixin tablet {
+    @media(max-width: #{$width_tablet}){
+        @content
+    }
+};
+
+@mixin mobile {
+    @media(max-width: #{$width_mobile}){
+        @content
+    }
+};
+
+@mixin tablet_large {
+    @media(max-width: #{$width_tablet_large}){
+        @content
+    }
+}

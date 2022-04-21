@@ -17,23 +17,27 @@ export default function Home() {
   
   return (
     <div className="Home" id="home">
-      <div className="left">
-        <div className="imageContainer">
-          <img src="assets/man.png" alt="Fadel Bidiga" srcset="" className="me"/>
-          <img src="assets/blob.png" alt="A blob" srcset="" className="blob"/>
+      <div className="intro">
+        <div className="left">
+          <div className="imageContainer">
+            <img src="assets/man.png" alt="Fadel Bidiga" srcset="" className="me"/>
+            <img src="assets/blob.png" alt="A blob" srcset="" className="blob"/>
+          </div>
+        </div>
+        <div className="rigth">
+          <div className="wrapper">
+            <h2>Salut, je suis</h2>
+            <h1>Fadel Bidiga</h1>
+            <h3> <span ref={textRef}></span></h3>
+          </div>
+          
         </div>
       </div>
-      <div className="rigth">
-        <div className="wrapper">
-          <h2>Salut, je suis</h2>
-          <h1>Fadel Bidiga</h1>
-          <h3> <span ref={textRef}></span></h3>
-        </div>
-        <a href="#portfolio">
+      
+      <a href="#portfolio">
           <MouseIcon className="mouse"/>
           scroll
-        </a>
-      </div>
+      </a>
     </div>
   )
 }
